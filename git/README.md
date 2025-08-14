@@ -10,6 +10,8 @@ show goal
 show solution
 ```
 
+![alt text](images/README/image.png)
+
 # https://git-school.github.io/visualizing-git/
 - [url](https://git-school.github.io/visualizing-git/)
 

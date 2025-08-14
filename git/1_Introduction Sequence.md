@@ -21,6 +21,8 @@ Maka Git akan membuat commit baru, misalnya C2:
 
 ![alt text](<images/1_Introduction Sequence/image-1.png>)
 
+---
+
 ## 2. Git Branches
 Branch di Git itu seperti cabang pohon.
 Batang pohon = branch utama (main), dan commit adalah simpul di batang itu.
@@ -49,6 +51,8 @@ Tapi, kalau kita ingin mulai bekerja di branch baru itu, kita harus berpindah ke
 ```bash
 git checkout bugFix
 ```
+
+---
 
 ## 3. Branches and Merging
 Kita sudah tahu cara membuat commit dan branch.
@@ -96,6 +100,8 @@ git merge bugFix
 ```
 
 ![alt text](<images/1_Introduction Sequence/image-6.png>)
+
+---
 
 ## 4. Git Rebase
 Selain merge, ada cara lain untuk menggabungkan pekerjaan dari branch berbeda, yaitu rebase.

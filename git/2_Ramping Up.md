@@ -36,6 +36,8 @@ git checkout C4
 
 ![alt text](<images/2_Ramping Up/image-1.png>)
 
+---
+
 ## 2. Relative Refs
 Menentukan commit dengan hash panjang memang merepotkan. Di dunia nyata, hash commit bisa sangat panjang, misalnya:
 
@@ -79,6 +81,8 @@ git checkout bugFix^
 ```
 ![alt text](<images/2_Ramping Up/image-3.png>)
 
+---
+
 ## 3. The "~" operator
 Kalau kita mau mundur beberapa commit sekaligus, mengetik ^ berulang kali bisa melelahkan.
 Nah, Git menyediakan tilde (~) operator untuk mempersingkatnya.
@@ -120,6 +124,8 @@ git checkout HEAD~1
 ```
 
 ![alt text](<images/2_Ramping Up/image-5.png>)
+
+---
 
 ## 4. Reversing Changes in Git
 Di Git, ada beberapa cara untuk membatalkan perubahan.

@@ -1,5 +1,5 @@
 # Git Remotes
-## 1. Our Command to create remotes
+## 1. Clone Intro
 #### Apa itu Remote Repository?
 Remote repository hanyalah salinan (copy) dari repository kita yang disimpan di komputer lain (biasanya server atau cloud).
 Kita bisa berinteraksi dengannya lewat internet untuk mengirim (push) atau mengambil (pull) commit.
@@ -24,7 +24,7 @@ git clone
 
 ---
 
-## 2. Git Remote Branches
+## 2. Remote Branches
 #### Apa yang Berubah Setelah git clone?
 Saat kamu menjalankan git clone (di simulasi ini), akan muncul branch baru di local repository, misalnya o/main.
 Branch ini disebut remote branch.
@@ -52,7 +52,7 @@ git commit       # Commit baru di detached HEAD (tidak memengaruhi o/main)
 
 ---
 
-## 3. Git Fetch
+## 3. Git Fetchin'
 #### Fungsi Dasar
 Bekerja dengan remote repository pada dasarnya adalah mengirim dan mengambil data dari repository lain.
 git fetch digunakan untuk mengambil commit terbaru dari remote tanpa mengubah branch lokal kita.
@@ -85,7 +85,7 @@ git fetch
 
 ---
 
-## 4. Git Pull
+## 4. Git Pullin'
 Kalau git fetch hanya mengambil data terbaru dari remote tanpa mengubah branch lokal, git pull adalah langkah lanjutannya: mengambil data + langsung menggabungkannya ke branch lokal.
 
 #### Cara Kerja

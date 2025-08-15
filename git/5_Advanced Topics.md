@@ -56,30 +56,33 @@ git branch bugWork main^^2^
 ---
 
 ## 3. Branch Spaghetti
-WOAHHHhhh Nelly! We have quite the goal to reach in this level.
+Di sini kita punya situasi “spaghetti branch” — branch main sudah beberapa commit lebih maju dibandingkan branch one, two, dan three.
+Tugas kita: memperbarui ketiga branch tersebut, tapi tiap branch punya kebutuhan yang berbeda:
 
-Here we have main that is a few commits ahead of branches one two and three. For whatever reason, we need to update these three other branches with modified versions of the last few commits on main.
-
-Branch one needs a re-ordering of those commits and an exclusion/drop of C5. Branch two just needs a pure reordering of the commits, and three only needs one commit transferred!
-
-We will let you figure out how to solve this one -- make sure to check out our solution afterwards with show solution.
+- Branch one → butuh commit dari main tapi tanpa C5 dan urutannya diubah.
+- Branch two → butuh semua commit dari main tapi urutannya diubah.
+- Branch three → cuma butuh satu commit dari main.
 
 ### solve
 ![alt text](<images/5_Advanced Topics/image-4.png>)
 
+Kita ambil commit dari main (C4, C3, C2) sesuai urutan yang diinginkan, skip C5:
 ```bash
 git checkout one
 git cherry-pick C4 C3 C2
 ```
 ![alt text](<images/5_Advanced Topics/image-5.png>)
 
+Kita ambil semua commit dari main, tapi dengan urutan khusus:
 ```bash
 git checkout two
 git cherry-pick C5 C4 C3 C2
 ```
 ![alt text](<images/5_Advanced Topics/image-6.png>)
 
+Karena three cuma butuh commit C2, kita bisa langsung rebase ke C2:
 ```bash
 git rebase C2 three
 ```
+
 ![alt text](<images/5_Advanced Topics/image-7.png>)

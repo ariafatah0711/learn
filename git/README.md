@@ -11,6 +11,7 @@ show solution
 ```
 
 ![alt text](images/README/image.png)
+![alt text](images/README/image-1.png)
 
 # https://git-school.github.io/visualizing-git/
 - [url](https://git-school.github.io/visualizing-git/)
